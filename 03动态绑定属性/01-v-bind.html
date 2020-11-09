@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id = "app">
+    <img v-bind:src="imgURL" alt="">
+<!--  //语法糖的写法-->
+  <img :src="imgURL" alt="">
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:'#app',
+        data:{
+            message:'你好',
+          imgURL:'https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png'
+        }
+    })
+</script>
+
+</body>
+</html>
